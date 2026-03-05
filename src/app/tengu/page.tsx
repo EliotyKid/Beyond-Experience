@@ -134,13 +134,6 @@ export default function Page() {
           </article>
         ))}
       </section>
-
-      <footer className={styles.footer}>
-        <p>
-          Versão para site (QR Code). Se quiser, eu adapto para caber em 1 card
-          físico (frente) + QR (verso).
-        </p>
-      </footer>
     </main>
   );
 }
