@@ -1,7 +1,8 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <div>Hello world!</div>
+    <main style={{ padding: "40px" }}>
+      <h1>Home</h1>
+      <p>A landing do deck está em /tengu</p>
     </main>
   );
 }

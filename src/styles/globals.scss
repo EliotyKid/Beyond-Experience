@@ -1,0 +1,22 @@
+@import "./variables";
+
+body {
+  background: $bg-dark;
+  color: $accent;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
+  text-transform: uppercase;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.reveal-img {
+  opacity: 0;
+  transform: translateY(30px);
+}

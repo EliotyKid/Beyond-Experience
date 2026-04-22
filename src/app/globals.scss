@@ -1,0 +1,105 @@
+@import "lenis/dist/lenis.css";
+
+:root {
+  --bg: #050505;
+  --bg-soft: #0d0d0d;
+  --surface: #111111;
+  --surface-2: #171717;
+  --text: #f5f5f5;
+  --text-soft: rgba(245, 245, 245, 0.72);
+  --muted: rgba(245, 245, 245, 0.42);
+  --line: rgba(255, 255, 255, 0.1);
+  --accent: #ffffff;
+  --sand: #e7e0d8;
+  --max-width: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: #fff;
+  color: #000;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(100% - 1.25rem, var(--max-width));
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: min(100% - 2rem, var(--max-width));
+  }
+}
+
+.title-display,
+.title-section {
+  font-family: var(--font-syne), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+.reveal-img {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
